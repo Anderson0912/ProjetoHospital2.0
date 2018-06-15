@@ -1,7 +1,9 @@
 
-package br.com.keneddy.objetos;
+package br.com.anderson.objetos;
 
-public class Paciente {
+import java.util.Date;
+
+public class Paciente extends Pessoa{
    private int id;
    private int numeroSus;
    private Pessoa responsavel;
@@ -30,8 +32,18 @@ public class Paciente {
         this.responsavel = responsavel;
     }
 
-    public Paciente(int id, int numeroSus) {
+    public Paciente(int id, int numeroSus, Pessoa responsavel, String nome, Date dataNascimento, String cpf, String rg, String endereco, String telefone, String estadoCivil, char sexo) {
+        super(nome, dataNascimento, cpf, rg, endereco, telefone, estadoCivil, sexo);
         this.id = id;
         this.numeroSus = numeroSus;
+        this.responsavel = responsavel;
     }
+
+    
+
+    @Override
+    public String toString() {
+        return "Paciente{" + "id=" + id + ", numeroSus=" + numeroSus + ", responsavel=" + responsavel + '}';
+    }
+    
 }

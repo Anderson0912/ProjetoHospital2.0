@@ -1,5 +1,5 @@
 
-package br.com.keneddy.objetos;
+package br.com.anderson.objetos;
 
 import java.util.Date;
 
@@ -47,4 +47,10 @@ public class Atestado {
         this.consulta = consulta;
         this.quantidadeDias = quantidadeDias;
     }   
+
+    @Override
+    public String toString() {
+        return "Atestado: " + "\nData do Início do Atestado: " + dataInicioDoAtestado + "\nData do Fim do Atestado: " + dataFimDoAtestado + "\nConsulta: " + consulta + "\nQuantidade de Dias=" + quantidadeDias + '}';
+    }
+    
 }

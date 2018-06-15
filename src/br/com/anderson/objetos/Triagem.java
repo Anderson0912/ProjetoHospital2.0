@@ -1,5 +1,5 @@
 
-package br.com.keneddy.objetos;
+package br.com.anderson.objetos;
 
 import java.util.List;
 
@@ -105,4 +105,10 @@ public class Triagem {
         this.peso = peso;
         this.altura = altura;
     }
+
+    @Override
+    public String toString() {
+        return "Triagem{" + "enfermeira=" + enfermeira + ", paciente=" + paciente + ", pressao=" + pressao + ", temperatura=" + temperatura + ", sintomas=" + sintomas + ", alergias=" + alergias + ", peso=" + peso + ", altura=" + altura + ", IMC=" + IMC + ", febre=" + febre + '}';
+    }
+    
 }

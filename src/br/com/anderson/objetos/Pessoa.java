@@ -1,9 +1,9 @@
 
-package br.com.keneddy.objetos;
+package br.com.anderson.objetos;
 
 import java.util.Date;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String nome;
     private Date dataNascimento;
     private String cpf;
@@ -87,4 +87,10 @@ public class Pessoa {
         this.estadoCivil = estadoCivil;
         this.sexo = sexo;
     }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" + "nome=" + nome + ", dataNascimento=" + dataNascimento + ", cpf=" + cpf + ", rg=" + rg + ", endereco=" + endereco + ", telefone=" + telefone + ", estadoCivil=" + estadoCivil + ", sexo=" + sexo + '}';
+    }
+    
 }
